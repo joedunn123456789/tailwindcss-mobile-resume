@@ -1,17 +1,124 @@
-<!-- Certifications -->
-<section class="mb-8">
-  <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Certifications</h2>
-  <div class="grid grid-cols-2 gap-2 text-sm text-gray-300">
-    <span class="bg-gray-800 px-3 py-2 rounded">Azure Fundamentals</span>
-    <span class="bg-gray-800 px-3 py-2 rounded">AWS Solutions Architect</span>
-    <span class="bg-gray-800 px-3 py-2 rounded">Salesforce Developer</span>
-    <span class="bg-gray-800 px-3 py-2 rounded">ServiceNow Admin</span>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Dunn Résumé</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans p-6 max-w-screen-sm mx-auto">
 
-<!-- Education -->
-<section class="mb-8">
-  <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Education</h2>
-  <p class="text-sm text-gray-300">Bachelor of Science, Computer Science</p>
-  <p class="text-xs text-gray-400">Full Sail University · July 2018</p>
-</section>
+  <!-- Header -->
+  <header class="text-center py-8 border-b border-gray-800">
+    <h1 class="text-3xl font-bold tracking-tight">Joseph Henry Dunn II</h1>
+    <p class="text-sm text-gray-400">Fully Remote · Wildomar, CA · 830-666-2525</p>
+    <p class="text-sm text-gray-400">jdunn0423@gmail.com</p>
+    <button onclick="toggleDarkMode()" class="mt-4 px-3 py-1 text-xs bg-gray-800 rounded hover:bg-gray-700 transition">
+      Toggle Dark Mode
+    </button>
+  </header>
+
+  <!-- Summary -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Summary</h2>
+    <p class="text-gray-300 text-sm leading-relaxed">
+      Cloud Systems Engineer · Infrastructure Manager · Automation Leader with 10+ years of experience in cloud architecture, enterprise IT infrastructure, and secure system automation across federal, defense, and corporate environments.
+    </p>
+    <p class="text-gray-400 text-sm mt-4">
+      Leads hybrid teams to deploy fault-tolerant environments in Azure and AWS under tight compliance constraints. Spearheads automation using PowerShell, Python, Power Automate, and ServiceNow—freeing up hundreds of team hours annually.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-gray-300">
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">React</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Bootstrap</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Modular CSS</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">GitHub Pages</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Tailwind CLI</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Semantic HTML</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Salesforce Install & Dev</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">ServiceNow Flow Designer</span>
+      <span class="bg-gray-800 px-3 py-2 rounded hover:scale-105 transition-transform">Azure Sentinel</span>
+    </div>
+  </section>
+
+  <!-- CRM Impact -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">CRM Impact</h2>
+    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-300">
+      <li>Automated lead assignment with validation rules</li>
+      <li>Dashboard creation and guided flows for service workflows</li>
+      <li>Case study-driven demos using Salesforce Developer Edition</li>
+      <li>Dual-track résumé bullets for technical and business impact</li>
+    </ul>
+    <button onclick="toggleCRM()" class="mt-2 px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600 transition">
+      Toggle CRM Case Study
+    </button>
+    <div id="crm-details" class="mt-2 hidden text-sm text-gray-400 border-l border-gray-700 pl-4">
+      <p><strong>Case Study:</strong> Designed hybrid cloud governance with Sentinel rules, conditional access, and quarterly failover testing. Delivered 99.9% SLA uptime across Microsoft 365 and Azure.</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Certifications</h2>
+    <div class="grid grid-cols-2 gap-2 text-sm text-gray-300">
+      <span class="bg-gray-800 px-3 py-2 rounded">Azure Fundamentals</span>
+      <span class="bg-gray-800 px-3 py-2 rounded">AWS Solutions Architect</span>
+      <span class="bg-gray-800 px-3 py-2 rounded">Salesforce Developer</span>
+      <span class="bg-gray-800 px-3 py-2 rounded">ServiceNow Admin</span>
+      <span class="bg-gray-800 px-3 py-2 rounded">CompTIA Security+</span>
+      <span class="bg-gray-800 px-3 py-2 rounded">Microsoft 365 Fundamentals</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Education</h2>
+    <p class="text-sm text-gray-300">Bachelor of Science, Computer Science</p>
+    <p class="text-xs text-gray-400">Full Sail University · July 2018</p>
+  </section>
+
+  <!-- Live Demo -->
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold mb-2 border-b border-gray-700 pb-1">Live Demo</h2>
+    <a href="https://joedunn123456789.github.io/react-markdown-previewer/" target="_blank"
+       class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded transition">
+      View Markdown Previewer
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-xs text-gray-500 mt-12 border-t border-gray-800 pt-4 text-center">
+    &copy; 2025 Joseph Dunn · Built with Tailwind CSS · Noir Edition
+    <p class="mt-2">
+      <a href="https://github.com/joedunn123456789/tailwindcss-mobile-resume" class="underline hover:text-gray-300">
+        View Source on GitHub
+      </a>
+    </p>
+    <p class="mt-2">
+      <a href="https://joedunn123456789.github.io/tailwindcss-mobile-resume/" class="underline hover:text-gray-300">
+        Live Résumé Demo
+      </a>
+    </p>
+    <div class="mt-4">
+      <p class="text-xs text-gray-500">Scan to view résumé:</p>
+      <div class="w-24 h-24 mx-auto bg-gray-700 rounded"></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+    function toggleCRM() {
+      const crmSection = document.getElementById('crm-details');
+      if (crmSection) crmSection.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
